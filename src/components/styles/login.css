@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,500;1,300&display=swap");
+
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: min(50%, 1440px);
+    margin-inline: auto;
+    top: 15%;
+    height: 550px;
+    border-radius: 20px;
+    background: var(--black);
+    box-shadow: var(--cream) 0px 3px 6px, var(--cream) 0px 3px 6px;
+    transform: translateX(-2%);
+    left: 27%;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "montserrat", sans-serif;
+    gap: 50px;
+}
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+}
+input {
+    background-color: #222222;
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+
+    gap: 20px;
+}
+.submit {
+    background: var(--cream);
+    text-align: center;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left button {
+    background: #222222;
+    width: 200px;
+    border-color: var(--cream);
+
+    border-radius: 25px;
+    align-items: flex-end;
+    color: var(--cream);
+}
+
+.button {
+    display: flex;
+
+    gap: 20px;
+}
+.fgp p {
+    color: white;
+}
+.fgp {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
