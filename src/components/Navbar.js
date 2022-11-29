@@ -6,7 +6,9 @@ import {
     AiFillProfile,
     AiOutlineLogin,
     AiOutlineUserAdd,
-} from "react-icons/ai";
+}
+ 
+from "react-icons/ai";
 import { FaPeopleArrows } from "react-icons/fa";
 
 const Header = () => (

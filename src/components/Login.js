@@ -1,6 +1,6 @@
-import "./index.css";
-
 import React, { useState } from "react";
+
+import "./styles/login.css";
 function Contact() {
     const [data, setData] = useState({
         username: "",
