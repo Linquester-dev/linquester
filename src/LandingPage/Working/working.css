@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wh h2 {
+    font-family: var(--mori);
+    font-size: 2.5rem;
+    text-align: center;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    /* padding-top: 40px; */
+    padding-bottom: 50px;
+}
+.wh p {
+    font-size: 1.5rem;
+    font-family: var(--mori);
+    line-height: 2.1rem;
+    color: #b0b0b0;
+    text-align: center;
+
+    width: 800px;
+}
+.lp img {
+    height: 100%;
+    width: 16vw;
+    border-radius: 40px;
+}

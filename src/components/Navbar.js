@@ -1,48 +1,41 @@
-import { Link } from "react-router-dom";
-
-import "./index.css";
-import {
-    AiHome,
-    AiFillProfile,
-    AiOutlineLogin,
-    AiOutlineUserAdd,
-}
- 
-from "react-icons/ai";
-import { FaPeopleArrows } from "react-icons/fa";
-
-const Header = () => (
-    <nav className="nav-header">
-        <div className="blog-container">
-            <ul className="nav-menu">
-                <li>
-                    <Link to="/" className="nav-link">
-                        <AiHome />
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/profile" className="nav-link">
-                        <AiFillProfile />
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/login" className="nav-link">
-                        <AiOutlineLogin />
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/signup" className="nav-link">
-                        <AiOutlineUserAdd />
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/ally" className="nav-link">
-                        <FaPeopleArrows />
-                    </Link>
-                </li>
-            </ul>
-        </div>
-    </nav>
-);
-
-export default Header;
+import "./styles/navbar.css";
+import { AiOutlineHome } from "react-icons/ai";
+import { BiNetworkChart } from "react-icons/bi";
+import { FcAbout, FcBusinessContact } from "react-icons/fc";
+import { useState } from "react";
+const Navbar = () => {
+    const [activeNav, setActiveNav] = useState("#");
+    return (
+        <nav>
+            <a
+                href="#"
+                onClick={() => setActiveNav("#")}
+                className={activeNav === "#" ? "active" : ""}
+            >
+                <AiOutlineHome />
+            </a>
+            <a
+                href="#working"
+                onClick={() => setActiveNav("#about")}
+                className={activeNav === "#about" ? "active" : ""}
+            >
+                <FcAbout />
+            </a>
+            <a
+                href="#intro"
+                onClick={() => setActiveNav("#intro")}
+                className={activeNav === "#intro" ? "active" : ""}
+            >
+                <BiNetworkChart />
+            </a>
+            <a
+                href="#contact"
+                onClick={() => setActiveNav("#contact")}
+                className={activeNav === "#contact" ? "active" : ""}
+            >
+                <FcBusinessContact />
+            </a>
+        </nav>
+    );
+};
+export default Navbar;
