@@ -45,27 +45,17 @@
 }
 
 html {
-    background: radial-gradient(
-        115.05% 275.33% at 3.47% 8.73%,
-        #5d0c8b 0%,
-        #251337 22.71%,
-        #040013 47.19%,
-        #1a0229 65.21%,
-        #2a033f 82.41%
-    );
+    background: white;
 }
-
 body {
     width: min(90%, 1440px);
     margin-inline: auto;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: white;
 }
 
 ul {

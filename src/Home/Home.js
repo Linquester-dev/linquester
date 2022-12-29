@@ -3,31 +3,37 @@ import "./home.css";
 const Home = () => (
     <>
         <header>{/* nav bar */}</header>
-        <main>
-            <section className="home">
-                <div className="hero">
-                    <div className="title">
-                        <h2>Let's build together</h2>
 
-                        <p className="titlep">
-                            Harnessed for productivity.Developed for
+        <section className="home">
+            <div className="hero">
+                <div className="left">
+                    <div className="text">
+                        <h2>
+                            Lets{" "}
+                            <span className="text-H">
+                                Build and Collaborate
+                            </span>{" "}
+                            together with linquester
+                        </h2>
+                        <p>
+                            Harnessed the productivity. Developed for the
                             collaboration. welcome to the platform where you
-                            find the right teammate for your upcoming projects.
+                            find the right teammates for the upcoming projects
                         </p>
-                        <div className="button">
-                            <button>Learn more </button>
-                        </div>
                     </div>
-                    <div className="heroImg">
-                        <img
-                            src={require("../assets/images/Mask group.png")}
-                            alt="hero.png"
-                            className="heroI"
-                        />
+                    <div className="button">
+                        <button className="sig">Signin now</button>
+                        <button className="learn">Learn more</button>
                     </div>
                 </div>
-            </section>
-        </main>
+                <div className="right">
+                    <img
+                        src={require("../assets/images/herolin.gif")}
+                        alt="hero.bgm"
+                    />
+                </div>
+            </div>
+        </section>
     </>
 );
 

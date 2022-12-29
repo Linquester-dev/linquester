@@ -4,9 +4,8 @@ import "./styles/login.css";
 function Contact() {
     const [data, setData] = useState({
         username: "",
-        password: "",
     });
-    const { username, password } = data;
+    const { username } = data;
     const changeHandler = (e) => {
         setData({
             ...data,
@@ -20,49 +19,57 @@ function Contact() {
     return (
         <>
             <section className="loginPage">
-                <div className="login">
-                    <div className="heading">
-                        <h1>Welcome back Ally!</h1>
-                        <br />
-                        <br />
-                        {/* <span>Login using the social networks</span> */}
-                        {/* <ul>
-                                <li>G</li>
-                                <li>F</li>
-                                <li>T</li>
-                            </ul> */}
-                    </div>
-                    <div className="input">
-                        <div className="left">
-                            <form onSubmit={submitHandler}>
-                                <input
-                                    type="text"
-                                    name="username"
-                                    value={username}
-                                    placeholder="Email"
-                                    onChange={changeHandler}
-                                />
-                                <br />
-                                <input
-                                    type="password"
-                                    name="password"
-                                    value={password}
-                                    placeholder="Password"
-                                    onChange={changeHandler}
-                                />
-                                <br />
-                                <div className="fgp">
-                                    <input
-                                        type="submit"
-                                        name="submit"
-                                        className="submit"
-                                    />
-                                    <p>forget password?</p>
-                                </div>
-                            </form>
+                <div className="l">
+                    <div className="login">
+                        <div className="heading">
+                            <h1>Welcome back Ally!</h1>
+                            <br />
+                            <br />
                         </div>
-                        <div className="left">
-                            <h2>or</h2>
+                        <div className="input">
+                            <div className="left">
+                                <form onSubmit={submitHandler}>
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        value={username}
+                                        placeholder="Email"
+                                        onChange={changeHandler}
+                                    />
+                                    <br />
+                                    <div className="fgp">
+                                        <input
+                                            type="submit"
+                                            name="submit"
+                                            className="submit"
+                                        />
+                                        <p>create new account</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className="left">
+                                <hr />
+                            </div>
+                        </div>
+                        <div className="logos">
+                            <div className="logo">
+                                <img
+                                    src={require("../assets/wp/fb.png")}
+                                    alt="fb"
+                                />
+                            </div>
+                            <div className="logo">
+                                <img
+                                    src={require("../assets/wp/mail.png")}
+                                    alt=""
+                                />
+                            </div>
+                            <div className="logo">
+                                <img
+                                    src={require("../assets/wp/git.png")}
+                                    alt=""
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
