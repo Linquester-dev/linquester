@@ -1,26 +1,23 @@
-// import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Working from "./LandingPage/Working";
-
-//import About from "./LandingPage/AboutUs";
-// import Footer from "./components/Footer";
-import Home from "./Home";
-// import Navbar from "./components/Navbar";
-// import Login from "./components/Login";
+import { Route , Switch } from "react-router-dom"
+import Navbar from "./LandingPage/Nav"
+// import Footer from './LandingPage/Footer'
+// import Working from './LandingPage/Working'
+// import Home from "./LandingPage/Home"
+// import About from './LandingPage/AboutUs/About'
+// import Login from './components/Login'
 function App() {
     return (
-        <>
-            {/* <About />
-            <BrowserRouter>
-                <Routes>
-                    <Route path={`/`} element={<Home />} />
-                </Routes>
-            </BrowserRouter>
-            <Navbar /> */}
-            <Home />
-            <Working />
-            {/* <Footer /> */}
-            {/* <Login /> */}
-        </>
+        <Switch>
+           <Route path="/navbar" component={Navbar}/>
+        </Switch>
+        // <BrowserRouter>
+        //   <Navbar/>
+        //   <Home/>
+        //   <Working/>
+        //   <About/>
+        //     <Footer/> 
+        //     <Route path="/login" component={Login}/>
+        // </BrowserRouter>
     );
 }
 

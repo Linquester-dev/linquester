@@ -1,0 +1,99 @@
+*{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.signup{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #dedede;
+    padding: 0.9rem;
+    gap: 0.2rem;
+  }
+
+  .form-submit{
+    
+    transform: translateY(50%);
+  }
+
+  .signup-content{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform: translateX(18%);
+    }
+  .signup-form{
+    margin: 0;
+  }
+ 
+.signup-image{
+    width: 50%;
+    height: 80vh;
+}
+.center-div{
+  margin: 0.5rem;
+  width: 50vh;
+  height: 40vh;
+  background-color: white;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.input-skill{
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.skill-button{
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.skill-button:hover{
+  background-color: transparent;
+}
+ol{
+  margin-top: 15px;
+}
+.skill-item i{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 37, 64, 0.35);
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+.skill-item i:hover{
+  background-color: aquamarine;
+}
+.zmid{
+  color: black;
+}

@@ -41,6 +41,7 @@
     background: rgb(248, 232, 205);
     box-shadow: 0 0 0 100vh rgb(248, 232, 205);
     clip-path: inset(0 -100vh);
+    height: 150vh;
 }
 .l {
     width: max(80%, 700px);

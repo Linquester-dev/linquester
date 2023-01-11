@@ -1,0 +1,79 @@
+
+*{
+    font-size: large;
+    font-family: "Mori";
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 2fr repeat(1,1fr);
+}
+.contact-short{
+    max-width: 50vw;
+    margin: auto;
+    padding: 5rem 10rem;
+    background-color: #fff;
+    border-radius:1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateY(50%);
+}
+
+.contact div:last-child_{
+    justify-self: end;
+    align-self: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 35rem 10fr 1fr 1fr  10rem;
+    width: 100%;
+}
+footer{
+    padding: 14rem 1rem 9rem 4rem;
+    background-color: blanchedalmond;
+    
+}
+
+.footer-subscribed{
+    margin-left: 8rem;
+}
+h3{
+    color: black;
+    margin: 1rem;
+}
+p{
+    color: black;
+}
+input{
+    margin-bottom: 2.4rem;
+}
+input,textarea{
+    max-width: 50rem;
+    padding: 1.6rem,2.4rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+input[type="submit"]{
+    max-width: 16rem;
+    margin-top: 2rem;
+    background-color: aqua;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 2rem;
+}
+.icons{
+    color: blanchedalmond;
+    font-size: 2.4rem;
+    position: relative;
+    cursor: pointer;
+    
+}
+.footer-social{
+    margin-right: 2rem;
+}
+
+.footer-about{
+    margin-left: 1rem;
+}
